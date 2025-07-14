@@ -6,6 +6,8 @@
 >
 > Mi objetivo es seguir mejorando constantemente, obtener certificaciones que respalden mi crecimiento profesional y, sobre todo, divertirme en el proceso. Aquí encontrarás análisis detallados, tutoriales y reflexiones sobre mis proyectos y descubrimientos en el ámbito de la ciberseguridad.
 
-> ¡Acompáñame en este viaje, donde cada encuentro es un nuevo misterio y cada paso nos acerca a la magia de lo desconocido!
+> Intentaré realizar al menos un Write-Up cada semana para mantener una constancia en la documentación.
+
+> _¡Acompáñame en este viaje, donde cada encuentro es un nuevo misterio y cada paso nos acerca a la magia de lo desconocido!_
 
 <figure><img src=".gitbook/assets/wallpaperbetter.com_1920x1080.jpg" alt=""><figcaption></figcaption></figure>
