@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "e0217b367247d60f",
+    "type": "split",
+    "children": [
+      {
+        "id": "afef451f36368fdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ef67eb7e8453470",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tryhackme/breaking-rsa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "breaking-rsa"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d9607d8aaa62020d",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b88f97f25ab399e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9dec107d6d61763",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5abc9cf2431e9090",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8fc1ade08c59edd6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e30ea04b7b23af58",
+    "type": "split",
+    "children": [
+      {
+        "id": "4caec9d41cebfd02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ceaf4955ffcdaff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tryhackme/breaking-rsa.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for breaking-rsa"
+            }
+          },
+          {
+            "id": "8deae012b870bee3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "tryhackme/breaking-rsa.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from breaking-rsa"
+            }
+          },
+          {
+            "id": "b2a464989075b6fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a8ca7bf019d73225",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "tryhackme/breaking-rsa.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of breaking-rsa"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9ef67eb7e8453470",
+  "lastOpenFiles": [
+    "tryhackme/Athena.md",
+    "tryhackme/breaking-rsa.md",
+    "tryhackme/page-1.md",
+    "media",
+    "README.md",
+    "SUMMARY.md"
+  ]
+}
