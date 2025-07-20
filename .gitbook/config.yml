@@ -1,0 +1,4 @@
+root: ./
+structure:
+  read: README.md
+  pages: tryhackme
