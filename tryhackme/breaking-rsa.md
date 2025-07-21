@@ -25,7 +25,7 @@ Enumeramos los directorios que tenemos disponibles en el puerto `HTTP.`&#x20;
 
 <figure><img src="../.gitbook/assets/gobusterindex.png" alt=""><figcaption></figcaption></figure>
 
-Contamos con dos páginas en funcionamiento: la principal, a la que se puede acceder directamente mediante la URL, y la página `/development`.
+    Contamos con dos páginas en funcionamiento: la principal, a la que se puede acceder directamente mediante la URL, y la página `/development`.
 
 <figure><img src="../.gitbook/assets/pagenormal.png" alt=""><figcaption></figcaption></figure>
 
