@@ -182,7 +182,7 @@ wget http://<ip>:<port>/venom.ko
 
 <figure><img src="../.gitbook/assets/Athena/ghidra-in.png" alt=""><figcaption></figcaption></figure>
 
-En la lista de funciones, tenemos una primera impresión de lo que estamos tratando aquí. Diamorfina.
+En la lista de funciones, tenemos una primera impresión de lo que estamos tratando aquí. diamorphine.
 
 <figure><img src="../.gitbook/assets/Athena/funtions=gghidra.png" alt=""><figcaption></figcaption></figure>
 
