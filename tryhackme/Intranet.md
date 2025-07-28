@@ -331,7 +331,7 @@ Esto nos permite obtener la shell con los privilegios del usuario `anders`.
 
 <figure><img src="../.gitbook/assets/Intranet/shell-anders.png" alt=""><figcaption></figcaption></figure>
 
-## Shell /anders
+# Shell /anders
 
 Enumeramos el usuario utilizando `sudo -l` para verificar los permisos que podemos obtener con `sudo`, y encontramos lo siguiente relacionado con el servicio Apache.
 
@@ -369,4 +369,4 @@ De esta manera, conseguimos la `shell` de `root` y sus permisos, lo que nos perm
 
 >Los monstruos nunca habitaron debajo de mi cama, porque en realidad, los monstruos estaban en mi mente. No temo a los monstruos, ya que yo soy el monstruo. Ahora comprendo que, durante todo este tiempo, lo que más he anhelo es ser ese monstruo.
 >
-> <p align="center"><img src="../.gitbook/assets/Intranet/thohuo.jpeg" alt="Reimu" data-size="original"></p>
+> <figure><img src="../.gitbook/assets/Intranet/thohuo.jpeg" alt=""><figcaption></figcaption></figure>
