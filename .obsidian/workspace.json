@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Athena.md",
+                "file": "tryhackme/Intranet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Athena"
+              "title": "Intranet"
             }
           }
         ]
@@ -171,6 +171,7 @@
   "active": "9ef67eb7e8453470",
   "lastOpenFiles": [
     "tryhackme/breaking-rsa.md",
+    "tryhackme/Intranet.md",
     "tryhackme/Athena.md",
     "SUMMARY.md",
     "README.md",
