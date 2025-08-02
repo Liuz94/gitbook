@@ -7,3 +7,4 @@
 * [Breaking RSA](tryhackme/breaking-rsa.md)
 * [Athena](tryhackme/Athena.md)
 * [Intranet](tryhackme/Intranet.md)
+* [Forgotten Implant](tryhackme/Forgotten%20Implant.md)
