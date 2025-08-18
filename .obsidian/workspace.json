@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Biblioteca.md",
+                "file": "tryhackme/Rabbit Store.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Biblioteca"
+              "title": "Rabbit Store"
             }
           }
         ]
@@ -170,11 +170,12 @@
   },
   "active": "9ef67eb7e8453470",
   "lastOpenFiles": [
-    "tryhackme/Athena.md",
+    "tryhackme/Intranet.md",
+    "tryhackme/Rabbit Store.md",
     "tryhackme/Biblioteca.md",
+    "tryhackme/Athena.md",
     "tryhackme/Forgotten Implant.md",
     "tryhackme/breaking-rsa.md",
-    "tryhackme/Intranet.md",
     "SUMMARY.md",
     "README.md",
     "tryhackme/page-1.md",
