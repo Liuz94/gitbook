@@ -195,6 +195,7 @@ else:
 ```
 
 <figure><img src="../.gitbook/assets/napping/adianfalg.png" alt=""><figcaption></figcaption></figure>
+
 # Shell \adrian
 
 
