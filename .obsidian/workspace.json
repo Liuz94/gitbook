@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Templates.md",
+                "file": "tryhackme/Voyage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Templates"
+              "title": "Voyage"
             }
           }
         ]
@@ -171,17 +171,18 @@
   },
   "active": "9ef67eb7e8453470",
   "lastOpenFiles": [
-    "tryhackme/Biblioteca.md",
-    "tryhackme/Templates.md",
+    "tryhackme/Athena.md",
+    "tryhackme/Voyage.md",
+    "README.md",
     "tryhackme/Rabbit Store.md",
+    "tryhackme/Templates.md",
+    "tryhackme/Biblioteca.md",
     "tryhackme/Napping.md",
     "Untitled.md",
     "tryhackme/Intranet.md",
-    "tryhackme/Athena.md",
     "tryhackme/Forgotten Implant.md",
     "tryhackme/breaking-rsa.md",
     "SUMMARY.md",
-    "README.md",
     "tryhackme/page-1.md",
     "media"
   ]

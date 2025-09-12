@@ -12,3 +12,4 @@
 * [Rabbit Store](tryhackme/Rabbit%20Store.md)
 * [Napping](tryhackme/Napping.md)
 * [Templates](tryhackme/Templates.md)
+* [Voyage](tryhackme/Voyage.md)
