@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/Eavesdropper.md",
+                "file": "tryhackme/CMesS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Eavesdropper"
+              "title": "CMesS"
             }
           }
         ]
@@ -173,6 +173,7 @@
   "lastOpenFiles": [
     "tryhackme/You Got Mail.md",
     "tryhackme/Eavesdropper.md",
+    "tryhackme/CMesS.md",
     "tryhackme/Sweettooth Inc.md",
     "tryhackme/ConvertMyVideo.md",
     "tryhackme/VulnNet dotjar.md",
