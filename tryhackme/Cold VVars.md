@@ -131,8 +131,8 @@ Aparecerán varias ventanas divididas, y puedes ir cerrándolas. Sin embargo, pr
 >
 >*Si solo eres bueno porque temes al infierno, entonces no eres bueno.* **~Albert Camus**
 >
->Lo llaman religión, pero yo lo considero cobardía. El hombre que actúa únicamente para obedecer un libro, para agradar a un Dios o para escapar del castigo divino, no comprende la verdadera moralidad. No elige hacer el bien; simplemente se deja llevar por el miedo.
+>*Lo llaman religión, pero yo lo considero cobardía. El hombre que actúa únicamente para obedecer un libro, para agradar a un Dios o para escapar del castigo divino, no comprende la verdadera moralidad. No elige hacer el bien; simplemente se deja llevar por el miedo.*
 >
->Sostengo que la bondad que surge del miedo no es auténtica. Aquél que espera una recompensa en el paraíso no es generoso; es solo algo comercial disfrazándolo de fe. La verdadera moral no proviene del cielo ni de mandamientos inamovibles grabados en piedra; nace de la fuerza interior y del coraje para crear tus propios valores, incluso en un mundo sin garantías divinas. Quien se atreve a elegir es libre de establecer y seguir sus propias reglas, incluso sin la promesa del cielo ni la amenaza del infierno.
+>*Sostengo que la bondad que surge del miedo no es auténtica. Aquél que espera una recompensa en el paraíso no es generoso; es solo algo comercial disfrazándolo de fe. La verdadera moral no proviene del cielo ni de mandamientos inamovibles grabados en piedra; nace de la fuerza interior y del coraje para crear tus propios valores, incluso en un mundo sin garantías divinas. Quien se atreve a elegir es libre de establecer y seguir sus propias reglas, incluso sin la promesa del cielo ni la amenaza del infierno.*
 >
 ><figure><img src="../.gitbook/assets/cloudvvars/touthou.png" alt=""><figcaption></figcaption></figure>
