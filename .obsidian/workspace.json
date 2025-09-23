@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tryhackme/ContainMe.md",
+                "file": "tryhackme/Cold VVars.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ContainMe"
+              "title": "Cold VVars"
             }
           }
         ]
@@ -171,15 +171,16 @@
   },
   "active": "9ef67eb7e8453470",
   "lastOpenFiles": [
-    "tryhackme/VulnNet dotjar.md",
+    "tryhackme/Sweettooth Inc.md",
+    "tryhackme/Eavesdropper.md",
+    "tryhackme/Cold VVars.md",
+    "tryhackme/Voyage.md",
     "tryhackme/ContainMe.md",
+    "tryhackme/VulnNet dotjar.md",
     "tryhackme/Wonderland.md",
     "tryhackme/You Got Mail.md",
-    "tryhackme/Eavesdropper.md",
     "tryhackme/CMesS.md",
-    "tryhackme/Sweettooth Inc.md",
     "tryhackme/ConvertMyVideo.md",
-    "tryhackme/Voyage.md",
     "tryhackme/Templates.md",
     "tryhackme/Athena.md",
     "README.md",
