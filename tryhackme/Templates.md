@@ -46,7 +46,7 @@ Utilizaremos la siguiente inyección:
 #{7*7}
 ```
 
-<figure><img src="../.gitbook/assets/Templates/7**7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Templates/77.png" alt=""><figcaption></figcaption></figure>
 
 Como resultado, debemos obtener la resolución de la multiplicación para determinar si es posible inyectar código del lado del servidor.
 

