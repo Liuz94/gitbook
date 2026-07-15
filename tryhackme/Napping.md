@@ -29,7 +29,7 @@ Encontramos algunos directorios, pero no son nada inusuales, ya que no contamos 
 En la página, encontramos el siguiente mensaje:
 
 ```
-# Please submit your link so that we can get started.  
+#  Please submit your link so that we can get started. 
 All links will be reviewed by our admin who also built this site!
 ```
 
